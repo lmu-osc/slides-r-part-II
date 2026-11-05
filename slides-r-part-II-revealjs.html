@@ -7,17 +7,17 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.19">
+  <meta name="generator" content="quarto-1.11.9">
 
   <meta name="author" content="David Rieger and Elizabeth Waterfield">
   <meta name="dcterms.date" content="2026-05-11">
   <title>Introduction to R: Part II</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
@@ -38,74 +38,8 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-2801d109f9c864a5074d1f05d189f622.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-37be6a4c19b64bd592206557d23a80ab.css">
   <link rel="stylesheet" href="assets/slides-custom.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -320,9 +254,6 @@ David Rieger and Elizabeth Waterfield
 </div>
 <div id="tabset-1-2">
 <p><strong>What is the result of the following logical comparison?</strong></p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a>(<span class="dv">5</span> <span class="sc">&gt;</span> <span class="dv">3</span>) <span class="sc">&amp;</span> (<span class="dv">10</span> <span class="sc">==</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <ol type="a">
 <li><p>TRUE</p></li>
 <li><p>FALSE</p></li>
@@ -713,9 +644,6 @@ David Rieger and Elizabeth Waterfield
 <li>Packages must be <strong>installed once</strong> (<em>or after updating R</em>).</li>
 <li>Use the <code>install.packages()</code> function. The package name must be in quotation marks.</li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="st">"haven"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <ul>
 <li>Alternatively: Use the <strong>Packages</strong> tab in the <strong>output</strong> pane (bottom right) of RStudio and click <strong>Install</strong>.</li>
 </ul>
@@ -741,9 +669,6 @@ David Rieger and Elizabeth Waterfield
 <li>Once installed, a package must be <strong>loaded every time</strong> you open a new R session.</li>
 <li>Use the <code>library()</code> function. Quotation marks are not required here.</li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a><span class="fu">library</span>(haven)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: Think of installing a package like buying a book and putting it on your shelf. You only buy it once. Loading a package with the library function is like taking the book off the shelf to read it today. You have to do this every time you start a new session in R.</p>
 <p><strong>Instructor Notes</strong>: Emphasize the difference between installing (quotes needed, done once) and loading (no quotes needed, done every session). This is a very common point of confusion for beginners.</p>
@@ -786,13 +711,6 @@ David Rieger and Elizabeth Waterfield
 <section id="practical-exercise-2-solution" class="slide level2">
 <h2>Practical exercise 2: Solution</h2>
 <p>This is what you should add to your R script:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="co"># 1. Install the package (run only once)</span></span>
-<span id="cb4-2"><a aria-label="2"></a><span class="fu">install.packages</span>(<span class="st">"haven"</span>)</span>
-<span id="cb4-3"><a aria-label="3"></a></span>
-<span id="cb4-4"><a aria-label="4"></a><span class="co"># 2. Load the package (run every session)</span></span>
-<span id="cb4-5"><a aria-label="5"></a><span class="fu">library</span>(haven)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: First, we use <code>install.packages</code> with quotation marks to download the package to our computer. Then, we use <code>library</code> without quotation marks to load it into our current session.</p>
 <style type="text/css">
@@ -919,10 +837,6 @@ David Rieger and Elizabeth Waterfield
 <section id="practical-exercise-4-solutions" class="slide level2">
 <h2>Practical exercise 4: Solutions</h2>
 <p>This is what you should add to your R script:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a><span class="co"># Loading Data</span></span>
-<span id="cb5-2"><a aria-label="2"></a>characters <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"characters.rds"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: Here is the solution. We use the assignment arrow to store the data in an object called characters. The readRDS function tells R to look for the file named “characters.rds” inside our Working Directory. If everything worked correctly, you should now see a new object appear in the top right Environment pane, showing that it has hundreds of rows and several variables.</p>
 <p><strong>Instructor Notes</strong>: Have the participants confirm they see the dataset in their Environment. Do not move forward until everyone has successfully loaded the data, as the rest of the workshop depends on it.</p>
@@ -1010,13 +924,6 @@ David Rieger and Elizabeth Waterfield
 <section id="practical-exercise-5-solutions" class="slide level2">
 <h2>Practical exercise 5: Solutions</h2>
 <p>This is what you should add to your R script:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a><span class="co"># Inspecting Data</span></span>
-<span id="cb6-2"><a aria-label="2"></a><span class="fu">names</span>(characters)</span>
-<span id="cb6-3"><a aria-label="3"></a><span class="fu">str</span>(characters)</span>
-<span id="cb6-4"><a aria-label="4"></a><span class="fu">head</span>(characters)</span>
-<span id="cb6-5"><a aria-label="5"></a><span class="fu">summary</span>(characters)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: Running these four lines provides a complete overview of the dataset without having to open it like a spreadsheet.</p>
 <style type="text/css">
@@ -1206,16 +1113,6 @@ David Rieger and Elizabeth Waterfield
 <section id="practical-exercise-6-solutions" class="slide level2">
 <h2>Practical exercise 6: Solutions</h2>
 <p>This is an example of what you could have added to your R script:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a><span class="co"># Accessing and subsetting columns</span></span>
-<span id="cb7-2"><a aria-label="2"></a>relevant_data <span class="ot">&lt;-</span> characters[</span>
-<span id="cb7-3"><a aria-label="3"></a>    characters<span class="sc">$</span>uni_name <span class="sc">==</span> <span class="st">"Brooklyn Nine-Nine"</span> <span class="sc">|</span></span>
-<span id="cb7-4"><a aria-label="4"></a>        characters<span class="sc">$</span>uni_name <span class="sc">==</span> <span class="st">"Community"</span>,</span>
-<span id="cb7-5"><a aria-label="5"></a>]</span>
-<span id="cb7-6"><a aria-label="6"></a></span>
-<span id="cb7-7"><a aria-label="7"></a><span class="co"># Verify the subset</span></span>
-<span id="cb7-8"><a aria-label="8"></a><span class="fu">table</span>(relevant_data<span class="sc">$</span>uni_name)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: Here is one correct way of solving this exercise. We specify the row conditions before the comma. Notice that we have to tell R exactly where to look for both sides of the OR condition by writing characters$uni_name twice. Finally, running table() on the newly created object confirms that we only have characters from those two shows.</p>
 <style type="text/css">
@@ -1300,20 +1197,6 @@ David Rieger and Elizabeth Waterfield
 <section id="practical-exercise-7-solutions" class="slide level2">
 <h2>Practical exercise 7: Solutions</h2>
 <p>This is an example of what you could have added to your R script:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a><span class="co"># Basic summary functions</span></span>
-<span id="cb8-2"><a aria-label="2"></a><span class="fu">mean</span>(relevant_data<span class="sc">$</span>notability)</span>
-<span id="cb8-3"><a aria-label="3"></a><span class="fu">sd</span>(relevant_data<span class="sc">$</span>notability)</span>
-<span id="cb8-4"><a aria-label="4"></a></span>
-<span id="cb8-5"><a aria-label="5"></a><span class="co"># Mean notability for Brooklyn Nine-Nine</span></span>
-<span id="cb8-6"><a aria-label="6"></a><span class="fu">mean</span>(relevant_data[</span>
-<span id="cb8-7"><a aria-label="7"></a>  relevant_data<span class="sc">$</span>uni_name <span class="sc">==</span> <span class="st">"Brooklyn Nine-Nine"</span>,</span>
-<span id="cb8-8"><a aria-label="8"></a>  <span class="st">"notability"</span></span>
-<span id="cb8-9"><a aria-label="9"></a>])</span>
-<span id="cb8-10"><a aria-label="10"></a></span>
-<span id="cb8-11"><a aria-label="11"></a><span class="co"># Mean notability for Community</span></span>
-<span id="cb8-12"><a aria-label="12"></a><span class="fu">mean</span>(relevant_data[relevant_data<span class="sc">$</span>uni_name <span class="sc">==</span> <span class="st">"Community"</span>, <span class="st">"notability"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: The dollar sign operator extracts the full vector for overall statistics. To calculate group-specific means, we nest the row condition inside the mean() function and specify “notability” in the column position after the comma.</p>
 <style type="text/css">
@@ -1397,26 +1280,6 @@ David Rieger and Elizabeth Waterfield
 <section id="practical-exercise-8-solutions" class="slide level2">
 <h2>Practical exercise 8: Solutions</h2>
 <p>This is an example of what you could have added to your R script:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-label="1"></a><span class="co"># Simple Plotting / Histograms</span></span>
-<span id="cb9-2"><a aria-label="2"></a></span>
-<span id="cb9-3"><a aria-label="3"></a><span class="co"># Set up the plotting area to show 2 plots side-by-side</span></span>
-<span id="cb9-4"><a aria-label="4"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
-<span id="cb9-5"><a aria-label="5"></a></span>
-<span id="cb9-6"><a aria-label="6"></a><span class="co"># Histogram for Brooklyn Nine-Nine</span></span>
-<span id="cb9-7"><a aria-label="7"></a><span class="fu">hist</span>(</span>
-<span id="cb9-8"><a aria-label="8"></a>    relevant_data[relevant_data<span class="sc">$</span>uni_name <span class="sc">==</span> <span class="st">"Brooklyn Nine-Nine"</span>, <span class="st">"notability"</span>],</span>
-<span id="cb9-9"><a aria-label="9"></a>    <span class="at">main =</span> <span class="st">"Brooklyn Nine-Nine"</span>,</span>
-<span id="cb9-10"><a aria-label="10"></a>    <span class="at">xlab =</span> <span class="st">"Notability"</span></span>
-<span id="cb9-11"><a aria-label="11"></a>)</span>
-<span id="cb9-12"><a aria-label="12"></a></span>
-<span id="cb9-13"><a aria-label="13"></a><span class="co"># Histogram for Community</span></span>
-<span id="cb9-14"><a aria-label="14"></a><span class="fu">hist</span>(</span>
-<span id="cb9-15"><a aria-label="15"></a>    relevant_data[relevant_data<span class="sc">$</span>uni_name <span class="sc">==</span> <span class="st">"Community"</span>, <span class="st">"notability"</span>],</span>
-<span id="cb9-16"><a aria-label="16"></a>    <span class="at">main =</span> <span class="st">"Community"</span>,</span>
-<span id="cb9-17"><a aria-label="17"></a>    <span class="at">xlab =</span> <span class="st">"Notability"</span></span>
-<span id="cb9-18"><a aria-label="18"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: Here is the solution. By reusing our subsetting logic, we can directly plot the notability for each specific show. Notice that we snuck in two extra arguments here: <code>main</code> and <code>xlab</code>. If you ran your code without them, you probably saw a very long, messy default title generated by R. By adding these arguments, we get clean, readable plots without overlapping text.</p>
 <style type="text/css">
@@ -1480,16 +1343,6 @@ David Rieger and Elizabeth Waterfield
 <h2>Practical exercise 9: Spot the errors</h2>
 <p>What is wrong with the following lines of code?</p>
 <p><br></p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-label="1"></a><span class="co"># 1. Loading data</span></span>
-<span id="cb10-2"><a aria-label="2"></a>my_data <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(characters.rds)</span>
-<span id="cb10-3"><a aria-label="3"></a></span>
-<span id="cb10-4"><a aria-label="4"></a><span class="co"># 2. Calculating a mean</span></span>
-<span id="cb10-5"><a aria-label="5"></a><span class="fu">Mean</span>(my_data<span class="sc">$</span>notability)</span>
-<span id="cb10-6"><a aria-label="6"></a></span>
-<span id="cb10-7"><a aria-label="7"></a><span class="co"># 3. Subsetting</span></span>
-<span id="cb10-8"><a aria-label="8"></a>brooklyn_data <span class="ot">&lt;-</span> my_data[my_data<span class="sc">$</span>uni_name <span class="sc">==</span> Brooklyn Nine<span class="sc">-</span>Nine]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <div class="footer">
 <p>Write your correctd version into your R script.</p>
 </div>
@@ -1511,16 +1364,6 @@ David Rieger and Elizabeth Waterfield
 <section id="practical-exercise-9-solutions" class="slide level2">
 <h2>Practical exercise 9: Solutions</h2>
 <p>Some possible corrections of the previous code:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a aria-label="1"></a><span class="co"># 1. Loading data</span></span>
-<span id="cb11-2"><a aria-label="2"></a>my_data <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"characters.rds"</span>)</span>
-<span id="cb11-3"><a aria-label="3"></a></span>
-<span id="cb11-4"><a aria-label="4"></a><span class="co"># 2. Calculating a mean</span></span>
-<span id="cb11-5"><a aria-label="5"></a><span class="fu">mean</span>(my_data<span class="sc">$</span>notability)</span>
-<span id="cb11-6"><a aria-label="6"></a></span>
-<span id="cb11-7"><a aria-label="7"></a><span class="co"># 3. Subsetting</span></span>
-<span id="cb11-8"><a aria-label="8"></a>brooklyn_data <span class="ot">&lt;-</span> my_data[my_data<span class="sc">$</span>uni_name <span class="sc">==</span> <span class="st">"Brooklyn Nine-Nine"</span>, ]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: Let’s go through the solutions. Line 1 was missing quotation marks around the file name. Line 2 used a capital M for the mean function, but R functions are lowercase. Line 3 was missing quotation marks around the show name AND was missing the crucial comma inside the brackets.</p>
 <style type="text/css">
@@ -1956,7 +1799,7 @@ Ensure the links are accessible through the course platform or slide deck.</p>
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"\u003ci class=\"fas fa-gear\">\u003c/i>","content":"\u003cul class=\"slide-menu-items\">\n\u003cli class=\"slide-tool-item active\" data-item=\"0\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\">\u003ckbd>f\u003c/kbd> Fullscreen\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"1\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\">\u003ckbd>s\u003c/kbd> Speaker View\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"2\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\">\u003ckbd>o\u003c/kbd> Slide Overview\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"3\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\">\u003ckbd>e\u003c/kbd> PDF Export Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"4\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\">\u003ckbd>r\u003c/kbd> Scroll View Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"5\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\">\u003ckbd>?\u003c/kbd> Keyboard Help\u003c/a>\u003c/li>\n\u003c/ul>"}],"openButton":true,"openButtonLabel":"Slide menu"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -2244,12 +2087,13 @@ Ensure the links are accessible through the course platform or slide deck.</p>
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/slides-r-part-II\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
           // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          window.quartoDecorateExternalLinks = function (root) {
+         var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
           for (var i=0; i<links.length; i++) {
             const link = links[i];
             if (!isInternal(link.href)) {
@@ -2258,8 +2102,69 @@ Ensure the links are accessible through the course platform or slide deck.</p>
               if (link.dataset.originalHref !== undefined) {
                 link.href = link.dataset.originalHref;
               }
+              if (!link.classList.contains('no-external-icon')) {
+              }
             }
           }
+          };
+          window.quartoDecorateExternalLinks(window.document);
+        // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+        // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+        const hideOnEscAndFocusOut = {
+          name: 'hideOnEscAndFocusOut',
+          defaultValue: true,
+          fn(instance) {
+            const dismiss = () => {
+              // A show scheduled by the trigger delay would otherwise reopen it
+              instance.clearDelayTimeouts();
+              instance.hide();
+            };
+            const onKeyDown = (event) => {
+              if (event.key !== 'Escape') {
+                return;
+              }
+              // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+              // except an open reveal.js slide menu, which Esc should close too.
+              // The menu handles keys only when its keyboard option is on.
+              const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+                window.Reveal.getConfig().menu?.keyboard !== false;
+              if (!menuHandlesEsc) {
+                event.stopPropagation();
+              }
+              if (instance.popper.contains(window.document.activeElement)) {
+                // Disabled while refocusing so the focus trigger does not reopen it
+                instance.disable();
+                instance.reference.focus();
+                instance.enable();
+              }
+              dismiss();
+            };
+            const onFocusOut = (event) => {
+              const target = event.relatedTarget;
+              if (target && !instance.reference.contains(target) &&
+                  !instance.popper.contains(target)) {
+                dismiss();
+              }
+            };
+            // On the trigger too: a click trigger (code-annotations: select) has no
+            // blur handling. Attached for the instance's lifetime so leaving the
+            // trigger also cancels a show still pending on the trigger delay.
+            instance.reference.addEventListener('focusout', onFocusOut);
+            return {
+              onShow() {
+                window.document.addEventListener('keydown', onKeyDown, true);
+                instance.popper.addEventListener('focusout', onFocusOut);
+              },
+              onHide() {
+                window.document.removeEventListener('keydown', onKeyDown, true);
+                instance.popper.removeEventListener('focusout', onFocusOut);
+              },
+              onDestroy() {
+                instance.reference.removeEventListener('focusout', onFocusOut);
+              },
+            };
+          },
+        };
         function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
           const config = {
             allowHTML: true,
@@ -2273,6 +2178,7 @@ Ensure the links are accessible through the course platform or slide deck.</p>
             interactiveBorder: 10,
             theme: 'light-border',
             placement: 'bottom-start',
+            plugins: [hideOnEscAndFocusOut],
           };
           if (contentFn) {
             config.content = contentFn;
