@@ -6,6 +6,7 @@ _site/**
 .github/**
 _extensions/
 images/**
+assets/logos/*
 
 # Common documentation files to ignore
 LICENSE-CODE.md
