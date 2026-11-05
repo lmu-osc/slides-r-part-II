@@ -22,7 +22,8 @@ authors:
     orcid: "https://orcid.org/0000-0002-6413-3895"
     affiliation: "LMU Open Science Center"
 title: "Introduction to R: Part II"
-version: v1.0.0
+version: v1.0.1
+doi: "10.5281/zenodo.23983511"
 date-released: 2026-11-05
 license: CC-BY-SA-4.0
 repository-code: "https://github.com/lmu-osc/slides-r-part-II"
