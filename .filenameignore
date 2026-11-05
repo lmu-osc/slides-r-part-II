@@ -5,6 +5,7 @@ _site/**
 .quarto/**
 .github/**
 _extensions/
+images/**
 
 # Common documentation files to ignore
 LICENSE-CODE.md
