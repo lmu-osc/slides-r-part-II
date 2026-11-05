@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you refer to these slides, please cite them as below."
+authors:
+  - family-names: "Rieger"
+    given-names: "David"
+    orcid: "https://orcid.org/0009-0004-3701-3101"
+    affiliation: "LMU Open Science Center"
+  - family-names: "Waterfield"
+    given-names: "Elizabeth"
+    orcid: "https://orcid.org/0009-0006-3725-6730"
+    affiliation: "LMU Open Science Center"
+  - family-names: "Sanchez Steinhagen"
+    given-names: "Caterina Luz"
+    orcid: "https://orcid.org/0009-0006-4783-1110"
+    affiliation: "LMU Open Science Center"
+  - family-names: "Middleton"
+    given-names: "Sara Lil"
+    orcid: "https://orcid.org/0000-0001-5307-8029"
+    affiliation: "LMU Open Science Center"
+  - family-names: "von Grebmer zu Wolfsthurn"
+    given-names: "Sarah"
+    orcid: "https://orcid.org/0000-0002-6413-3895"
+    affiliation: "LMU Open Science Center"
+title: "Introduction to R: Part II"
+version: 0.0.1
+date-released: 2026-11-05
+license: CC-BY-SA-4.0
+repository-code: "https://github.com/lmu-osc/slides-r-part-II"
+url: "https://lmu-osc.github.io/slides-r-part-II/"
